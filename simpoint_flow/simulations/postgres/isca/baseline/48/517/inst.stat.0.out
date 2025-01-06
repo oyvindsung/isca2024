@@ -1,0 +1,167 @@
+/* -*- Mode: c -*- */
+####################################################################################################
+Core 0
+####################################################################################################
+Cumulative:        Cycles: 7532151               Instructions: 20110175              IPC: 2.66991
+
+Periodic:          Cycles: 3583773               Instructions: 10055243              IPC: 2.80577
+
+ST_OP_INV                                            0        0.000%                0        0.000%
+ST_OP_NOP                                      1364446        7.318%          2989099        7.920%
+ST_OP_CF                                       2665197       14.294%          5357991       14.196%
+ST_OP_MOV                                      1841000        9.874%          3705183        9.817%
+ST_OP_CMOV                                       31806        0.171%            63994        0.170%
+ST_OP_LDA                                       467452        2.507%           940685        2.492%
+ST_OP_IMEM                                     5882808       31.552%         11832341       31.350%
+ST_OP_IADD                                     3883648       20.829%          7808318       20.688%
+ST_OP_IMUL                                       26697        0.143%            53443        0.142%
+ST_OP_IDIV                                        1435        0.008%             2895        0.008%
+ST_OP_ICMP                                      845024        4.532%          1699727        4.503%
+ST_OP_LOGIC                                    1201367        6.443%          2416207        6.402%
+ST_OP_SHIFT                                     224299        1.203%           452190        1.198%
+ST_OP_FMEM                                      137968        0.740%           277041        0.734%
+ST_OP_FCVT                                         169        0.001%              338        0.001%
+ST_OP_FADD                                           0        0.000%                0        0.000%
+ST_OP_FMUL                                           0        0.000%                0        0.000%
+ST_OP_FMA                                            0        0.000%                0        0.000%
+ST_OP_FDIV                                         169        0.001%              338        0.001%
+ST_OP_FCMP                                         338        0.002%              682        0.002%
+ST_OP_FCMOV                                          0        0.000%                0        0.000%
+ST_OP_GATHER                                         0        0.000%                0        0.000%
+ST_OP_SCATTER                                        0        0.000%                0        0.000%
+ST_OP_PIPELINED_FAST                             13711        0.074%            27637        0.073%
+ST_OP_PIPELINED_MEDIUM                           49300        0.264%            98376        0.261%
+ST_OP_PIPELINED_SLOW                                 0        0.000%                0        0.000%
+ST_OP_NOTPIPELINED_MEDIUM                         7068        0.038%            14209        0.038%
+ST_OP_NOTPIPELINED_SLOW                           1193        0.006%             2400        0.006%
+ST_OP_NOTPIPELINED_VERY_SLOW                         0        0.000%                0        0.000%
+                                              18645095      100.000%         37743094      100.000%
+                                                  5.65         3.08              5.62         3.10
+
+ST_NOT_CF                                     15979898       85.706%         32385103       85.804%
+ST_CF_BR                                        222693        1.194%           447820        1.186%
+ST_CF_CBR                                      1636263        8.776%          3289714        8.716%
+ST_CF_CALL                                      317647        1.704%           638561        1.692%
+ST_CF_IBR                                        69371        0.372%           139245        0.369%
+ST_CF_ICALL                                      52517        0.282%           105610        0.280%
+ST_CF_ICO                                            0        0.000%                0        0.000%
+ST_CF_RET                                       365910        1.963%           735449        1.949%
+ST_CF_SYS                                          796        0.004%             1592        0.004%
+                                              18645095      100.000%         37743094      100.000%
+                                                  0.41         1.14              0.40         1.14
+
+ST_BAR_NONE                                   18643106       99.989%         37739102       99.989%
+ST_BAR_FETCH                                      1989        0.011%             3992        0.011%
+ST_BAR_ISSUE                                         0        0.000%                0        0.000%
+ST_BAR_BOTH                                          0        0.000%                0        0.000%
+                                              18645095      100.000%         37743094      100.000%
+                                                  0.00         0.01              0.00         0.01
+
+ST_NOT_MEM                                    12624319       67.709%         25633712       67.916%
+ST_MEM_LD                                      3457161       18.542%          6954120       18.425%
+ST_MEM_ST                                      2563615       13.750%          5155262       13.659%
+ST_MEM_PF                                            0        0.000%                0        0.000%
+ST_MEM_WH                                            0        0.000%                0        0.000%
+ST_MEM_EVICT                                         0        0.000%                0        0.000%
+                                              18645095      100.000%         37743094      100.000%
+                                                  0.46         0.62              0.46         0.62
+
+ST_NOT_MEM_OFFPATH                              887127       66.938%          2215136       68.722%
+ST_MEM_LD_OFFPATH                               255368       19.269%           589094       18.276%
+ST_MEM_ST_OFFPATH                               182793       13.793%           419108       13.002%
+ST_MEM_PF_OFFPATH                                    0        0.000%                0        0.000%
+ST_MEM_WH_OFFPATH                                    0        0.000%                0        0.000%
+ST_MEM_EVIC_OFFPATHT                                 0        0.000%                0        0.000%
+                                               1325288      100.000%          3223338      100.000%
+                                                  0.47         0.61              0.44         0.61
+
+ST_OP_ONPATH                                  18645095                       37743094              
+
+ST_OP_OFFPATH                                  1325288                        3223338              
+
+ST_FAKE_OP_OFFPATH                               58133        4.386%           297435        9.228%
+ST_NOT_FAKE_OP_OFFPATH                         1267155       95.614%          2925903       90.772%
+                                               1325288      100.000%          3223338      100.000%
+                                                  0.96         0.94              0.91         0.87
+
+ST_FAKE_REASON_NOT_FAKE                        1267155       95.614%          2925903       90.772%
+ST_FAKE_REASON_REDIRECT_TO_NOT_INSTRUMENTED         58133        4.386%           297435        9.228%
+ST_FAKE_REASON_RETURN_TO_NOT_INSTRUMENTED             0        0.000%                0        0.000%
+ST_FAKE_REASON_NONRET_CF_TO_NOT_INSTRUMENTED             0        0.000%                0        0.000%
+ST_FAKE_REASON_NOT_TAKEN_TO_NOT_INSTRUMENTED             0        0.000%                0        0.000%
+ST_FAKE_REASON_WRONG_PATH_STORE_TO_NEW_REGION             0        0.000%                0        0.000%
+                                               1325288      100.000%          3223338      100.000%
+                                                  0.04         0.20              0.09         0.28
+
+ST_INST_ONPATH                                14393456                       29195481              
+
+ST_INST_OFFPATH                                1025556                        2531717              
+
+STATIC_PIN_NOP                                       0                              0              
+
+DYNAMIC_PIN_REP_GREATER_256                          0                              0              
+
+INST_MAP_UPDATE_JITTED                          444006       18.664%           887333       18.658%
+INST_MAP_UPDATE_NPC_INV                              0        0.000%                0        0.000%
+INST_MAP_UPDATE_NPC_NOP                              0        0.000%                0        0.000%
+INST_MAP_UPDATE_NPC_CF                               0        0.000%                0        0.000%
+INST_MAP_UPDATE_NPC_MOV                              0        0.000%                0        0.000%
+INST_MAP_UPDATE_NPC_CMOV                             0        0.000%                0        0.000%
+INST_MAP_UPDATE_NPC_LDA                              0        0.000%                0        0.000%
+INST_MAP_UPDATE_NPC_IMEM                             0        0.000%                0        0.000%
+INST_MAP_UPDATE_NPC_IADD                         30044        1.263%            60009        1.262%
+INST_MAP_UPDATE_NPC_IMUL                             0        0.000%                0        0.000%
+INST_MAP_UPDATE_NPC_IDIV                             0        0.000%                0        0.000%
+INST_MAP_UPDATE_NPC_ICMP                             0        0.000%                0        0.000%
+INST_MAP_UPDATE_NPC_LOGIC                            0        0.000%                0        0.000%
+INST_MAP_UPDATE_NPC_SHIFT                            0        0.000%                0        0.000%
+INST_MAP_UPDATE_NPC_FMEM                             0        0.000%                0        0.000%
+INST_MAP_UPDATE_NPC_FCVT                             0        0.000%                0        0.000%
+INST_MAP_UPDATE_NPC_FADD                             0        0.000%                0        0.000%
+INST_MAP_UPDATE_NPC_FMUL                             0        0.000%                0        0.000%
+INST_MAP_UPDATE_NPC_FMA                              0        0.000%                0        0.000%
+INST_MAP_UPDATE_NPC_FDIV                             0        0.000%                0        0.000%
+INST_MAP_UPDATE_NPC_FCMP                             0        0.000%                0        0.000%
+INST_MAP_UPDATE_NPC_FCMOV                            0        0.000%                0        0.000%
+INST_MAP_UPDATE_NPC_GATHER                           0        0.000%                0        0.000%
+INST_MAP_UPDATE_NPC_SCATTER                          0        0.000%                0        0.000%
+INST_MAP_UPDATE_NPC_PIPELINED_FAST                   0        0.000%                0        0.000%
+INST_MAP_UPDATE_NPC_PIPELINED_MEDIUM                 0        0.000%                0        0.000%
+INST_MAP_UPDATE_NPC_PIPELINED_SLOW                   0        0.000%                0        0.000%
+INST_MAP_UPDATE_NPC_NOTPIPELINED_MEDIUM              0        0.000%                0        0.000%
+INST_MAP_UPDATE_NPC_NOTPIPELINED_SLOW                0        0.000%                0        0.000%
+INST_MAP_UPDATE_NPC_NOTPIPELINED_VERY_SLOW             0        0.000%                0        0.000%
+INST_MAP_UPDATE_MEM_INV                              0        0.000%                0        0.000%
+INST_MAP_UPDATE_MEM_NOP                              0        0.000%                0        0.000%
+INST_MAP_UPDATE_MEM_CF                               0        0.000%                0        0.000%
+INST_MAP_UPDATE_MEM_MOV                         884282       37.171%          1767711       37.171%
+INST_MAP_UPDATE_MEM_CMOV                           678        0.029%             1352        0.028%
+INST_MAP_UPDATE_MEM_LDA                              0        0.000%                0        0.000%
+INST_MAP_UPDATE_MEM_IMEM                             0        0.000%                0        0.000%
+INST_MAP_UPDATE_MEM_IADD                        906281       38.096%          1812101       38.104%
+INST_MAP_UPDATE_MEM_IMUL                             0        0.000%                0        0.000%
+INST_MAP_UPDATE_MEM_IDIV                             0        0.000%                0        0.000%
+INST_MAP_UPDATE_MEM_ICMP                         71161        2.991%           142374        2.994%
+INST_MAP_UPDATE_MEM_LOGIC                        19743        0.830%            39402        0.829%
+INST_MAP_UPDATE_MEM_SHIFT                            0        0.000%                0        0.000%
+INST_MAP_UPDATE_MEM_FMEM                             0        0.000%                0        0.000%
+INST_MAP_UPDATE_MEM_FCVT                             0        0.000%                0        0.000%
+INST_MAP_UPDATE_MEM_FADD                             0        0.000%                0        0.000%
+INST_MAP_UPDATE_MEM_FMUL                             0        0.000%                0        0.000%
+INST_MAP_UPDATE_MEM_FMA                              0        0.000%                0        0.000%
+INST_MAP_UPDATE_MEM_FDIV                             0        0.000%                0        0.000%
+INST_MAP_UPDATE_MEM_FCMP                             0        0.000%                0        0.000%
+INST_MAP_UPDATE_MEM_FCMOV                            0        0.000%                0        0.000%
+INST_MAP_UPDATE_MEM_GATHER                           0        0.000%                0        0.000%
+INST_MAP_UPDATE_MEM_SCATTER                          0        0.000%                0        0.000%
+INST_MAP_UPDATE_MEM_PIPELINED_FAST               22736        0.956%            45370        0.954%
+INST_MAP_UPDATE_MEM_PIPELINED_MEDIUM                 0        0.000%                0        0.000%
+INST_MAP_UPDATE_MEM_PIPELINED_SLOW                   0        0.000%                0        0.000%
+INST_MAP_UPDATE_MEM_NOTPIPELINED_MEDIUM              0        0.000%                0        0.000%
+INST_MAP_UPDATE_MEM_NOTPIPELINED_SLOW                0        0.000%                0        0.000%
+INST_MAP_UPDATE_MEM_NOTPIPELINED_VERY_SLOW             0        0.000%                0        0.000%
+                                               2378931      100.000%          4755652      100.000%
+                                                 28.52         7.15             28.52         7.15
+
+
+
